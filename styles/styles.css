@@ -1,0 +1,26 @@
+main {
+    margin-inline: var(--spacing-300);
+    margin-block: var(--spacing-800);
+    background-color: var(--white);
+    border-radius: 1rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    margin-block-end: var(--spacing-400);
+}
+
+h1 {
+    margin-block-end: var(--spacing-300);
+}
+
+p {
+    margin-block-end: var(--spacing-600);
+}
+
+.card__content {
+    padding-inline: var(--spacing-300);
+}
