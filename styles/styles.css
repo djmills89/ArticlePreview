@@ -40,7 +40,6 @@ main {
 }
 
 .icon-container {
-    margin-inline-start: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,6 +48,10 @@ main {
     background-color: var(--grey-200);
     border-radius: 50%;
     cursor: pointer;
+}
+
+.icon-auto-margin {
+    margin-inline-start: auto;
 }
 
 .date {
@@ -60,5 +63,40 @@ main {
 }
 
 .toast {
-    
+    background-color: var(--grey-900);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-200);
+    padding-inline: var(--spacing-400);
+    padding-block: var(--spacing-300);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.toast__text {
+    text-transform: uppercase;
+    color: var(--grey-400);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-200);
+}
+
+li {
+    width: 2rem;
+    height: 2rem;
+}
+
+li, img {
+    width: 100%;
+    display: block;
 }
