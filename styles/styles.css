@@ -5,7 +5,7 @@ main {
     border-radius: 1rem;
 }
 
-img {
+.card__image {
     display: block;
     width: 100%;
     border-top-left-radius: 1rem;
@@ -13,14 +13,52 @@ img {
     margin-block-end: var(--spacing-400);
 }
 
-h1 {
+.card__title {
     margin-block-end: var(--spacing-300);
 }
 
-p {
+.card__body {
     margin-block-end: var(--spacing-600);
 }
 
 .card__content {
     padding-inline: var(--spacing-300);
+    padding-block-end: var(--spacing-200);
+}
+
+.profile {
+    display: flex;
+    gap: var(--spacing-200);
+    align-items: center;
+    height: 4rem;
+}
+
+.profile__image {
+    height: 100%;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.icon-container {
+    margin-inline-start: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-color: var(--grey-200);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.date {
+    color: var(--grey-400)
+}
+
+.share-button {
+    width: 50%;
+}
+
+.toast {
+    
 }
