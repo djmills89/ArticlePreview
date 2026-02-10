@@ -1,102 +1,70 @@
 main {
     margin-inline: var(--spacing-300);
-    margin-block: var(--spacing-800);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--white);
-    border-radius: 1rem;
+}
+
+.card {
+    width: 100%;
 }
 
 .card__image {
-    display: block;
     width: 100%;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    margin-block-end: var(--spacing-400);
+    display: block;
+}
+
+.card__content {
+    padding-block-start: var(--spacing-400);
+    padding-inline: var(--spacing-300);
+    padding-block-end: var(--spacing-600);
 }
 
 .card__title {
     margin-block-end: var(--spacing-300);
 }
 
-.card__body {
-    margin-block-end: var(--spacing-600);
-}
-
-.card__content {
+.card__footer {
     padding-inline: var(--spacing-300);
-    padding-block-end: var(--spacing-200);
+    position: relative;
 }
 
 .profile {
     display: flex;
-    gap: var(--spacing-200);
+    width: 100%;
+    justify-content: flex-start;
     align-items: center;
-    height: 4rem;
+    gap: var(--spacing-200);
+    background-color: var(--white);
+    padding-block-end: var(--spacing-200);
 }
 
 .profile__image {
-    height: 100%;
-    width: 4rem;
+    width: 3.2rem;
     border-radius: 50%;
 }
 
 .icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3.2rem;
-    height: 3.2rem;
-    background-color: var(--grey-200);
-    border-radius: 50%;
+    margin-inline-start: auto;
     cursor: pointer;
 }
 
-.icon-auto-margin {
-    margin-inline-start: auto;
-}
-
-.date {
-    color: var(--grey-400)
-}
-
-.share-button {
-    width: 50%;
+.profile, .toast {
+    position: absolute;
+    inset-inline: 0;
+    padding-inline: var(--spacing-300);
 }
 
 .toast {
-    background-color: var(--grey-900);
-    display: flex;
     justify-content: space-between;
     align-items: center;
     gap: var(--spacing-200);
-    padding-inline: var(--spacing-400);
+    background-color: var(--grey-900);
     padding-block: var(--spacing-300);
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    padding-inline: var(--spacing-400);
 }
 
 .hidden {
     display: none;
-}
-
-.toast__text {
-    text-transform: uppercase;
-    color: var(--grey-400);
-}
-
-ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--spacing-200);
-}
-
-li {
-    width: 2rem;
-    height: 2rem;
-}
-
-li, img {
-    width: 100%;
-    display: block;
 }
