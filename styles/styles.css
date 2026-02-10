@@ -33,10 +33,12 @@ main {
 .profile {
     display: flex;
     width: 100%;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     gap: var(--spacing-200);
     background-color: var(--white);
+    padding-block: var(--spacing-300);
+    padding-inline: var(--spacing-400);
     padding-block-end: var(--spacing-200);
 }
 
@@ -46,7 +48,7 @@ main {
 }
 
 .icon-container {
-    margin-inline-start: auto;
+    /* margin-inline-start: auto; */
     cursor: pointer;
 }
 
@@ -57,12 +59,20 @@ main {
 }
 
 .toast {
+    display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     gap: var(--spacing-200);
     background-color: var(--grey-900);
     padding-block: var(--spacing-300);
     padding-inline: var(--spacing-400);
+    padding-block-end: var(--spacing-200);
+}
+
+.toast__title {
+    text-transform: uppercase;
+    color: var(--grey-400);
 }
 
 .hidden {
