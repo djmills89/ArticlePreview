@@ -1,10 +1,13 @@
-const shareButtons = document.querySelectorAll('.icon-container')
+const shareButton = document.querySelector('.share-button')
 const profileCard = document.getElementById('profileCard')
-const toastCard = document.getElementById('toastCard')
+const cardShare = document.getElementById('cardShare')
 
-shareButtons.forEach(button => {
-    button.addEventListener('click', (e) => {
-        profileCard.classList.toggle('hidden')
-        toastCard.classList.toggle('hidden')
-    })
+shareButton.addEventListener('click', (e) => {
+    const rect = e.target.getBoundingClientRect()
+    const cardRect = cardShare.getBoundingClientRect()
+    const left = rect.left + rect.width / 2 - cardRect.width / 2
+    const top = rect.top - cardRect.height - 10
+    cardShare.style.left = `${left - 8}px`
+    cardShare.style.top = `${top - 20}px`
+    cardShare.classList.toggle('active')
 })

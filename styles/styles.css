@@ -67,6 +67,11 @@ footer {
     object-fit: contain;
 }
 
+.card__share span {
+    text-transform: uppercase;
+    color: var(--grey-400);
+}
+
 @media (min-width: 712px) {
     .card {
         display: grid;
@@ -89,5 +94,38 @@ footer {
         height: 100%;
         object-fit: cover;
         border-radius: 1rem 0 0 1rem;
+    }
+
+    .card__share {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        width: 25rem;
+        background: var(--grey-900);
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(10px);
+        transition: all 0.2s ease;
+    }
+
+    .card__share::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background: var(--grey-900);
+        bottom: -8px;
+        left: 50%;
+        transform: rotate(45deg);
+    }
+
+    .card__share.active {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
     }
 }
