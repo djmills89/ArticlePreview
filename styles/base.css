@@ -65,7 +65,7 @@ body {
     font-size: var(--fs-2);
     font-weight: var(--fw-bold);
     line-height: var(--lh-loose);
-    list-style: var(--ls-ex-tight);
+    letter-spacing: var(--ls-ex-tight);
     color: var(--grey-900);
 }
 .text-preset-4 {

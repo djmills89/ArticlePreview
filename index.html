@@ -15,44 +15,47 @@
 <body>
 <main>
   <section class="card">
-    <img class="card__image" src="./images/drawers.jpg" alt="Image of a dresser with a planter of wheat and 2 picture frames.">
-    <section class="card__content">
+
+    <div class="card__image">
+      <img src="./images/drawers.jpg" alt="Picture of a green dresser with plants and picture frames on top.">
+    </div>
+
+    <div class="card__content">
       <h1 class="card__title text-preset-1">
-        Shift the overall look and feel by adding these wonderful
-        touches to furniture in your home
+        Shift the overall look and feel by adding these wonderful touches to furniture in your home
       </h1>
       <p class="card__body text-preset-2">
-        Ever been in a room and felt like something was missing? Perhaps
-        it felt slightly bare and uninviting. I’ve got some simple tips
-        to help you make any room feel complete.
+        Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
       </p>
-    </section>
-    <section class="card__footer">
-      <section class="profile" id="profileCard">
-        <div class="image-container">
-          <img class="profile__image" src="./images/avatar-michelle.jpg" alt="Profile picture">
+
+    <footer class="card__footer">
+      <div class="card__author">
+        <img src="./images/avatar-michelle.jpg" alt="Profile Picture">
+
+        <div class="author__profile">
+          <p class="author__name text-preset-3">Michell Appleton</p>
+          <p class="author__date text-preset-2">28 Jun 2020</p>
         </div>
-        <div class="profile__info">
-          <p class="text-preset-3">Michelle Appleton</p>
-          <p class="text-preset-2">28 Jun 2020</p>
-        </div>
-        <div class="icon-container">
-          <img src="./images/icon-share.svg" alt="Share button" class="share-button">
-        </div>
-      </section>
-      <section class="toast hidden" id="toastCard">
-        <p class="toast__title text-preset-4">share</p>
-        <div class="social-container">
-          <img class="social-icons" src="./images/icon-facebook.svg" alt="Facebook logo">
-          <img class="social-icons" src="./images/icon-twitter.svg" alt="Twitter logo">
-          <img class="social-icons" src="./images/icon-pinterest.svg" alt="Pinterest logo">
-        </div>
-        <div class="icon-container icon-dark-bg">
-          <img src="./images/icon-share.svg" alt="Share button" class="share-button">
-        </div>
-      </section>
-    </section>
+
+        <button class="share-button">
+          <img src="./images/icon-share.svg" alt="">
+        </button>
+      </div>
+
+      <!-- <div class="card__share hidden">
+        <span>share</span>
+        <a href="#"><img src="" alt=""></a>
+        <a href="#"><img src="" alt=""></a>
+        <a href="#"><img src="" alt=""></a>
+      </div> -->
+    </footer>
+  </div>
+
+    
+
   </section>
+
+
 </main>
 <script src="script.js"></script>
 </body>
