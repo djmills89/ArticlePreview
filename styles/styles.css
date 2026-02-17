@@ -23,21 +23,19 @@ main {
     border-radius: 1rem 1rem 0 0;
 }
 
-.card__content {
-    padding-inline: var(--spacing-300);
-}
-
 .card__title {
     margin-block-end: var(--spacing-300);
+    padding-inline: var(--spacing-300);
 }
 
 .card__body {
     margin-block-end: var(--spacing-600);
+    padding-inline: var(--spacing-300);
 }
 
-footer {
+/* footer {
     margin-block-end: var(--spacing-200);
-}
+} */
 
 .card__author {
     display: flex;
@@ -49,6 +47,7 @@ footer {
 .card__author img {
     width: 3.2rem;
     border-radius: 50%;
+    object-fit: contain;
 }
 
 .share-button {
@@ -60,6 +59,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-inline-end: var(--spacing-300);
 }
 
 .share-button img {
@@ -70,6 +70,42 @@ footer {
 .card__share span {
     text-transform: uppercase;
     color: var(--grey-400);
+}
+
+footer {
+    margin-block-end: 0;
+    padding-block-start: var(--spacing-200);
+    padding-block-end: var(--spacing-200);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-200);
+    padding-inline: var(--spacing-300);
+}
+
+.share__styles {
+    background: var(--grey-900);
+    padding-inline-start: var(--spacing-300);
+}
+
+.share__styles {
+    margin-block-end: 0;
+    padding-block-start: var(--spacing-200);
+    padding-block-end: var(--spacing-200);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.card__share {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-300);
+}
+
+.hidden {
+    display: none;
 }
 
 @media (min-width: 712px) {
