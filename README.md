@@ -58,4 +58,4 @@ Describe how you used AI tools (if any) during this project. This helps demonstr
 - Only as good as the feedback you give.  I was struggling with my hidden class because I had given it an assumption that was no longer true.
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@djmills89](https://www.frontendmentor.io/profile/djmills89)
